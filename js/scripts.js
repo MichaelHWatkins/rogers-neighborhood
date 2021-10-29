@@ -25,9 +25,6 @@ function beepBoop(value, name){
   }
 }
   
-
-
-
 function reverseBeepBoop(value, name){
   if(!Number.isInteger(value) || value < 0){
     return "Error please input a positive integer!"
@@ -36,29 +33,25 @@ function reverseBeepBoop(value, name){
     let answerArray = [];
     for(let index = 0; index <= value; index++){
       let indexArray = index.toString().split("").sort().reverse() 
-      for(let i = 0; i < indexArray.length; i++){
-        if(indexArray.includes("3")){
-          answerArray.push("Won't you be my neighbor, " + name + "?");
-          break;
-        }
-        else if(indexArray.includes("2")){
-          answerArray.push("Boop!");
-          break;
-        }
-        else if(indexArray.includes("1")){
-          answerArray.push("Beep!")
-          break;
-        }
-        else{
-          answerArray.push(index);
-          break;
-        }
+      if(indexArray.includes("3")){
+        answerArray.push("Won't you be my neighbor, " + name + "?");
+      }
+      else if(indexArray.includes("2")){
+        answerArray.push("Boop!");
+      }
+      else if(indexArray.includes("1")){
+        answerArray.push("Beep!")
+      }
+      else{
+        answerArray.push(index);
       }
     }
     return answerArray.reverse();
   }
-  
 }
+
+
+
 //UI Logic
 
 $(document).ready(function() {
