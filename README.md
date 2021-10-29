@@ -25,7 +25,7 @@ _Users will enter a number and an array is returned._
 #### These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third.
 
 ## Tests
-Describe: beepBoop(value)
+Describe: beepBoop(value, name)
 
 Test: "It should return an array with a 0 if the number 0 is inputted"
 Code: beepBoop(0, name);
@@ -50,12 +50,18 @@ Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, B
 Won't you be my neighbor?, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!, Boop!, Wont you be my neighboor?
 
 Test: "It should return a string saying: Error please input an integer! if something other than an integer is inputted.
-Code: beepBoop("error")
+Code: beepBoop("error", name)
 Expected Output: "Error please input an integer!" 
 
 Test: "It should return a string saying: Error please input a positive integer! if a negative integer is inputted.
-Code: beepBoop(-1)
+Code: beepBoop(-1, name)
 Expected Output: "Error please input a positive integer!"
+
+
+Describe: reverseBeepBoop(value, name)
+Test: "It should return an array with: Won't you be my neighbor, name? Boop!, Beep!, 0, if the number inputted is 3!"
+Code: beepBoop(3, name);
+Expected Output: Won't you be my neighbor, name? Boop!, Beep!, 0
 
 ## Setup/Installation Requirements
 
