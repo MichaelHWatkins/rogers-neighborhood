@@ -1,8 +1,8 @@
 //Business Logic
 
 function beepBoop(value){
-  if(!Number.isInteger(value)){
-    return "Error please input an integer!"
+  if(!Number.isInteger(value) || value < 0){
+    return "Error please input a positive integer!"
   }
   else{
     let answerArray = [];
