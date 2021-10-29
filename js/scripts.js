@@ -1,6 +1,6 @@
 //Business Logic
 
-function beepBoop(value){
+function beepBoop(value, name){
   if(!Number.isInteger(value) || value < 0){
     return "Error please input a positive integer!"
   }
@@ -10,7 +10,7 @@ function beepBoop(value){
       let indexArray = index.toString().split("").sort().reverse() 
       for(let i = 0; i < indexArray.length; i++){
         if(indexArray.includes("3")){
-          answerArray.push("Won't you be my neighbor?");
+          answerArray.push("Won't you be my neighbor, " + name + "?");
           break;
         }
         else if(indexArray.includes("2")){
