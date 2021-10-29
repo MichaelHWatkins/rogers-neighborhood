@@ -27,7 +27,35 @@ _Users will enter a number and an array is returned._
 ## Tests
 Describe: beepBoop(value)
 
+Test: "It should return an array with a 0 if the number 0 is inputted"
+Code: beepBoop(0);
+Expected Output: 0
 
+Test: "It should return an array with 0, Beep! if the number inputted is 1"
+Code: beepBoop(1);
+Expected Output: 0, Beep!
+
+Test: "It should return an array with 0, Beep!, Boop! if the number inputted is 2!"
+Code: beepBoop(2);
+Expected Output: 0, Beep!, Boop!
+
+Test: "It should return an array with 0, Beep!, Boop!, Won't you be my neighbor? if the number inputted is 3!"
+Code: beepBoop(3);
+Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?
+
+Test: "It should retunr an array with 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, 
+Won't you be my neighbor?, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!, Boop!, Wont you be my neighboor? if the number 23 is inputted!"
+Code: beepBoop(23);
+Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, 
+Won't you be my neighbor?, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!, Boop!, Wont you be my neighboor?
+
+Test: "It should return a string saying: Error please input an integer! if something other than an integer is inputted.
+Code: beepBoop("error")
+Expected Output: "Error please input an integer!" 
+
+Test: "It should return a string saying: Error please input a positive integer! if a negative integer is inputted.
+Code: beepBoop(-1)
+Expected Output: "Error please input a positive integer!"
 
 ## Setup/Installation Requirements
 
