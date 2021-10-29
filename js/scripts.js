@@ -62,4 +62,10 @@ $(document).ready(function() {
     const name = $("#inputName").val();
     $("#output").text(beepBoop(result, name));
   })
+  $("form#numberInputRev").submit(function(event) {
+    event.preventDefault();
+    const resultRev = parseInt($("#inputRev").val());
+    const nameRev = $("#inputNameRev").val();
+    $("#output").text(reverseBeepBoop(resultRev, nameRev));
+  })
 })
