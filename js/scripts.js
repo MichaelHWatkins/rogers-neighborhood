@@ -39,6 +39,7 @@ $(document).ready(function() {
   $("form#numberInput").submit(function(event) {
     event.preventDefault();
     const result = parseInt($("#input").val());
-    $("#output").text(beepBoop(result));
+    const name = $("#inputName").val();
+    $("#output").text(beepBoop(result, name));
   })
 })
