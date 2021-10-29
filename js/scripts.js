@@ -7,7 +7,7 @@ function beepBoop(value, name){
   else{
     let answerArray = [];
     for(let index = 0; index <= value; index++){
-      let indexArray = index.toString().split("").sort().reverse() 
+      let indexArray = index.toString().split("") 
       if(indexArray.includes("3")){
         answerArray.push("Won't you be my neighbor, " + name + "?");
       }
@@ -32,7 +32,7 @@ function reverseBeepBoop(value, name){
   else{
     let answerArray = [];
     for(let index = 0; index <= value; index++){
-      let indexArray = index.toString().split("").sort().reverse() 
+      let indexArray = index.toString().split("")
       if(indexArray.includes("3")){
         answerArray.push("Won't you be my neighbor, " + name + "?");
       }
